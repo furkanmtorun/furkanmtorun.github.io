@@ -45,10 +45,12 @@
          width: auto; height: 185px; overflow-y: scroll; padding-right: 20px;
          }
          */
-         @media screen and (min-width: 769px),
-         print .hero.is-medium .hero-body {
-         padding-bottom: 6rem !important;
-         }
+         @media screen and (min-width: 769px) {
+    .hero.is-medium .hero-body {
+        padding-bottom: 6rem !important;
+        padding-top: 6rem !important;
+    }
+}
       </style>
    </head>
    <body>
@@ -121,8 +123,11 @@
                               <li class="tab" onclick="openTab(event,'TechStack')">
                                  <a>Tech Stack</a>
                               </li>
-                              <li class="tab" onclick="openTab(event,'TalksHonors')">
-                                 <a>Talks & Honors</a>
+                              <li class="tab" onclick="openTab(event,'Talks')">
+                                 <a>Talks</a>
+                              </li>
+                              <li class="tab" onclick="openTab(event,'Honors')">
+                                 <a>Honors</a>
                               </li>
                               <li class="tab" onclick="openTab(event,'Volunteering')">
                                  <a>Volunteering</a>
@@ -179,8 +184,8 @@
                               </li>
                            </ul>
                         </div>
-                        <!-- TalksHonors Tab -->
-                        <div id="TalksHonors" class="content-tab" style="display:none">
+                        <!-- Talks Tab -->
+                        <div id="Talks" class="content-tab" style="display:none">
                            <h5 class="subtitle is-6 info_text">
                               <strong>Talks & Poster:</strong>
                               <a href="https://www.youtube.com/@furkanmtorun/playlists" target="_blank" class="has-text-danger"> [Watch on YouTube] </a>
@@ -190,7 +195,11 @@
                                  <li>► Talk about machine learning on biological datasets in <a class="has-text-info" href="https://www.meetup.com/pyladiesmunich/events/293371897/" target="_blank">PyLadies</a> and <a class="has-text-info" href="https://www.meetup.com/munich-datageeks/events/293903743/" target="_blank">Munich DataGeeks</a> meetups, Munich, June 2023.</li>
                                  <li>► Poster about <a class="has-text-info" href="https://doi.org/10.1093/nar/gkab939" target="_blank">ConVarT project</a> at <a class="has-text-info" href="https://www.eshg.org/" target="_blank">52nd European Human Genetics Conference</a>, Gothenburg, June 2019.</li>
                               </ul>
-                              <br>
+                           </h5>
+                        </div>
+                        <!-- Honors Tab -->
+                        <div id="Honors" class="content-tab" style="display:none">
+                           <h5 class="subtitle is-6 info_text">
                               <ul class="vertical_limits">
                                  <strong>Awards & Honors:</strong>
                                  <li>► My first first-authored paper <a href="https://doi.org/10.1021/acs.jproteome.2c00473" target="_blank" class="has-text-info">OmicLearn</a> is featured on <a href="https://pubs.acs.org/pb-assets/images/_journalCovers/jprobs/jprobs_v022i002-3.jpg" target="_blank" class="has-text-info">the cover</a> of <a href="https://pubs.acs.org/toc/jprobs/22/2" target="_blank" class="has-text-info">Journal of Proteome Research</a>, February 2023. </li>
