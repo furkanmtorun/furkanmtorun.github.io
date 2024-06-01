@@ -52,6 +52,7 @@
         }
         /* GDPR Notification */
         .gdpr-notification {
+            display: none; /* Initially hide the notification */
             position: fixed;
             bottom: 30px;
             left: 50%;
@@ -290,7 +291,8 @@
     <!-- GDPR Notification Badge -->
     <div class="gdpr-notification" id="gdprNotification">
         <p>We use cookies for analytics purposes. By continuing to use this website, you agree to our use of cookies.</p>
-        <button onclick="closeNotification()">Got it!</button>
+        <button id="okButton">Got it!</button>
+
     </div>
 
     <!-- Schema.org -->
@@ -339,10 +341,14 @@
           evt.currentTarget.className += " is-active";
       }
         
-     function closeNotification() {
-        var notification = document.getElementById('gdprNotification');
-        notification.style.display = 'none';
+     // Check if the user has already seen the notification
+     if (!localStorage.getItem('gdprNotificationClosed')) {
+        document.getElementById('gdprNotification').style.display = 'block';
      }
+     document.getElementById('okButton').onclick = function() {
+        document.getElementById('gdprNotification').style.display = 'none';
+        localStorage.setItem('gdprNotificationClosed', 'true');
+     };
     
     </script>
   </body>
