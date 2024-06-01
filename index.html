@@ -342,8 +342,8 @@
       }
         
         // Check if the user has already seen the notification
-        if (!document.cookie.includes('gdprNotificationClosed')) {
-            document.getElementById('gdprNotification').style.display = 'block';
+        if (document.cookie.includes('gdprNotificationClosed')) {
+            document.getElementById('gdprNotification').style.display = 'none';
         }
         
         // Function to close the notification
