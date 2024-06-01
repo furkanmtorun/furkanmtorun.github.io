@@ -41,6 +41,42 @@
         .content-tab li {
             margin-top: 10px !important;
         }
+        /* GDPR Notification */
+        .gdpr-notification {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 55%;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #555;
+            z-index: 9999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .gdpr-notification p {
+            margin: 0;
+            flex-grow: 1;
+        }
+        .gdpr-notification button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .gdpr-notification button:hover {
+            background-color: #0056b3;
+        }
         @media screen and (min-width: 769px) {
             .hero.is-medium .hero-body {
                 padding-bottom: 6rem !important;
@@ -272,7 +308,7 @@
     }
     </script>
     
-    <!-- Tabs -->
+    <!-- Tabs and GDPR Notification Badge -->
     <script type="text/javascript">
       function openTab(evt, tabName) {
           var i, x, tablinks;
@@ -287,6 +323,12 @@
           document.getElementById(tabName).style.display = "block";
           evt.currentTarget.className += " is-active";
       }
+        
+     function closeNotification() {
+        var notification = document.getElementById('gdprNotification');
+        notification.style.display = 'none';
+     }
+    
     </script>
   </body>
 </html>
