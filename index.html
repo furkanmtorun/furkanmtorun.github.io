@@ -291,7 +291,7 @@
     <!-- GDPR Notification Badge -->
     <div class="gdpr-notification" id="gdprNotification">
         <p>We use cookies for analytics purposes. By continuing to use this website, you agree to our use of cookies.</p>
-        <button id="okButton">Got it!</button>
+        <button id="okButton" onclick="closeNotification()">Got it!</button>
 
     </div>
 
@@ -341,14 +341,17 @@
           evt.currentTarget.className += " is-active";
       }
         
-     // Check if the user has already seen the notification
-     if (!localStorage.getItem('gdprNotificationClosed')) {
-        document.getElementById('gdprNotification').style.display = 'block';
-     }
-     document.getElementById('okButton').onclick = function() {
-        document.getElementById('gdprNotification').style.display = 'none';
-        localStorage.setItem('gdprNotificationClosed', 'true');
-     };
+        // Check if the user has already seen the notification
+        if (!document.cookie.includes('gdprNotificationClosed')) {
+            document.getElementById('gdprNotification').style.display = 'block';
+        }
+        
+        // Function to close the notification
+        function closeNotification() {
+            // Set a cookie to remember that the notification has been closed
+            document.cookie = 'gdprNotificationClosed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+            document.getElementById('gdprNotification').style.display = 'none';
+        }
     
     </script>
   </body>
