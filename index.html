@@ -13,7 +13,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Furkan M. Torun | Researcher & Data Scientist</title>
+    <title>Furkan M. Torun</title>
     <meta name="description" content="Furkan M. Torun is a researcher and data scientist with expertise in bioinformatics/computational biology." />
     <link rel="shortcut icon" type="image/png" href="https://user-images.githubusercontent.com/49681382/165621959-1991c02b-2682-4e35-8b46-2bc52a6fd2c5.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" type="text/css" />
@@ -50,6 +50,17 @@
         .content-tab li {
             margin-top: 10px !important;
         }
+        th {border-bottom: 1px solid #dbdbdb;}
+        .sticky-table-row {
+            position: sticky; 
+            top: 30px; 
+            background-color: white; 
+            z-index: 1; 
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .sticky-table-row:first-child {top: 0px;}
+        .sticky-table-row:nth-child(2) {top: 30px;}
+        .vertical-limit {max-height: 430px; overflow-y: auto;}
         /* GDPR Notification */
         .gdpr-notification {
             display: none; /* Initially hide the notification */
@@ -120,6 +131,11 @@
               </span>
               <span>Mail</span>
               </a>
+              <a href="https://www.linkedin.com/in/furkanmtorun/" target="_blank" class="button is-info is-outlined is-medium">
+              <span class="icon">
+              <i class="fa fa-linkedin"></i>
+              </span>
+              </a>
               <a href="https://github.com/furkanmtorun" target="_blank" class="button is-dark is-outlined is-medium">
               <span class="icon">
               <i class="fa fa-github"></i>
@@ -134,11 +150,6 @@
               <a href="https://twitter.com/furkanmtorun" target="_blank" class="button is-info is-outlined is-medium">
               <span class="icon">
               <i class="fa fa-twitter"></i>
-              </span>
-              </a>
-              <a href="https://www.linkedin.com/in/furkanmtorun/" target="_blank" class="button is-info is-outlined is-medium">
-              <span class="icon">
-              <i class="fa fa-linkedin"></i>
               </span>
               </a>
               <a href="https://www.youtube.com/@furkanmtorun/playlists" target="_blank" class="button is-danger is-outlined is-medium">
@@ -225,22 +236,58 @@
                   </ul>
                 </div>
                 <!-- Talks Tab -->
-                <div id="Talks" class="content-tab" style="display:none">
-                  <h5 class="subtitle is-6 info_text">
-                    <strong>Talks:</strong>
-                    <a href="https://www.youtube.com/@furkanmtorun/playlists" target="_blank" class="has-text-danger"> [Watch on YouTube] </a>
-                    <ul class="vertical_limits">
-                      <li>► Talk titled "<a href='https://www.meetup.com/pydata-prague/events/297072175/' target='_blank' class='has-text-info'>Become a Data Storyteller with Streamlit!</a>" at <a href='https://pydata.cz/' target='_blank' class='has-text-info'>PyData Meetup</a>, Prague, November 2023 and at  <a href='https://www.meetup.com/pymunich/events/299650733/' target='_blank' class='has-text-info'>PyMunich Meetup</a>, Munich, May 2024.</li>
-                      <li>► Two <b>PyCon</b> talks titled "<a href="https://2023.pycon.it/en/event/how-to-build-an-open-source-machine-learning-platform-in-biology" target="_blank" class="has-text-info">How to Build an Open-Source Machine Learning Platform in Biology?</a>" at <a href="https://cz.pycon.org/2023/" target="_blank" class="has-text-info">PyCon CZ</a>, Prague, September 2023 and at <a href="https://pycon.it" target="_blank" class="has-text-info">PyCon IT</a>, Florence, May 2023.</li>
-                      <li>► Talk about machine learning on biological datasets in <a class="has-text-info" href="https://www.meetup.com/pyladiesmunich/events/293371897/" target="_blank">PyLadies</a> and <a class="has-text-info" href="https://www.meetup.com/munich-datageeks/events/293903743/" target="_blank">Munich DataGeeks</a> meetups, Munich, June 2023.</li>
-                      <li>► Poster about <a class="has-text-info" href="https://doi.org/10.1093/nar/gkab939" target="_blank">ConVarT project</a> at <a class="has-text-info" href="https://www.eshg.org/" target="_blank">52nd European Human Genetics Conference</a>, Gothenburg, June 2019.</li>
-                    </ul>
-                  </h5>
+                <div id="Talks" class="content-tab vertical-limit" style="display:none;">
+                    <table class="table is-striped is-bordered">
+                        <thead>
+                            <tr class="sticky-table-row">
+                                <th colspan="3" class="has-text-centered">
+                                    <a href="https://www.youtube.com/@furkanmtorun/playlists" target="_blank" class="has-text-danger">View Recordings on YouTube</a>
+                                </th>
+                            </tr>
+                            <tr class="sticky-table-row">
+                                <th>Talk/Presentation and Event/Conference</th>
+                                <th style="width: 20%;">Date</th>
+                                <th>Place</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href='https://www.meetup.com/pymunich/events/299650733/' target='_blank' class='has-text-info'>Become a Data Storyteller with Streamlit</a> at <a href='https://www.meetup.com/pymunich/' target='_blank' class='has-text-info'>PyMunich Meetup</a></td>
+                                <td>21 May 2024</td>
+                                <td>Munich</td>
+                            </tr>
+                            <tr>
+                                <td><a href='https://www.meetup.com/pydata-prague/events/297072175/' target='_blank' class='has-text-info'>Become a Data Storyteller with Streamlit</a> at <a href='https://pydata.cz/' target='_blank' class='has-text-info'>PyData Meetup</a></td>
+                                <td>20 November 2023</td>
+                                <td>Prague</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://cz.pycon.org/2023/" target="_blank" class="has-text-info">How to Build an Open-Source Machine Learning Platform in Biology?</a> at <a href="https://cz.pycon.org/2023/" target="_blank" class="has-text-info">PyCon CZ</a></td>
+                                <td>16 September 2023</td>
+                                <td>Prague</td>
+                            </tr>
+                            <tr>
+                                <td>Application of machine learning on biological datasets at <a class="has-text-info" href="https://www.meetup.com/pyladiesmunich/events/293371897/" target="_blank">PyLadies Meetup</a> and <a class="has-text-info" href="https://www.meetup.com/munich-datageeks/events/293903743/" target="_blank">Munich DataGeeks Meetup</a></td>
+                                <td>7 and 22 June 2023</td>
+                                <td>Munich</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://2023.pycon.it/en/event/how-to-build-an-open-source-machine-learning-platform-in-biology" target="_blank" class="has-text-info">How to Build an Open-Source Machine Learning Platform in Biology?</a> at <a href="https://pycon.it" target="_blank" class="has-text-info">PyCon IT</a></td>
+                                <td>28 May 2023</td>
+                                <td>Florence</td>
+                            </tr>
+                            <tr>
+                                <td>Poster about <a class="has-text-info" href="https://doi.org/10.1093/nar/gkab939" target="_blank">ConVarT project</a> at <a class="has-text-info" href="https://www.eshg.org/" target="_blank">52nd European Human Genetics Conference</a></td>
+                                <td>15-18 June 2019</td>
+                                <td>Gothenburg</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <!-- Honors Tab -->
                 <div id="Honors" class="content-tab" style="display:none">
                   <h5 class="subtitle is-6 info_text">
-                    <ul class="vertical_limits">
+                    <ul>
                       <strong>Awards & Honors:</strong>
                       <li>► My first first-authored paper <a href="https://doi.org/10.1021/acs.jproteome.2c00473" target="_blank" class="has-text-info">OmicLearn</a> is featured <a href="https://pubs.acs.org/toc/jprobs/22/2" target="_blank" class="has-text-info">on the cover of Journal of Proteome Research</a>, February 2023. </li>
                       <li>► Graduated with a high honor degree (3.63/4.00) and 1st ranked in Molecular Biology and Genetics, Turkey, June 2022.</li>
