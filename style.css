@@ -1,7 +1,7 @@
 /* Color palette variables */
 :root {
-    --primary-color: #2D5BFF;       /* Bright blue - main accent color */
-    --primary-hover: #1E3FBF;       /* Darker blue for hover states */
+    --primary-color: #0052CC;       /* Atlassian blue - professional & tech-focused */
+    --primary-hover: #0747A6;       /* Darker blue for hover states */
     --secondary-color: #6C63FF;     /* Purple-blue - secondary accent */
     --dark-black: #2C3E50;          /* Dark color for text and active tabs */
     --text-light: #607D8B;         /* Lighter blue-gray for secondary text */
