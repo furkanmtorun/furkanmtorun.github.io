@@ -1,3 +1,20 @@
+/* Color palette variables */
+:root {
+    --primary-color: #2D5BFF;       /* Bright blue - main accent color */
+    --primary-hover: #1E3FBF;       /* Darker blue for hover states */
+    --secondary-color: #6C63FF;     /* Purple-blue - secondary accent */
+    --dark-black: #2C3E50;          /* Dark color for text and active tabs */
+    --text-light: #607D8B;         /* Lighter blue-gray for secondary text */
+    --light-white: #F8FAFC;        /* Light color for backgrounds and text */
+    --border-color: #E2E8F0;       /* Light gray for borders */
+    --success-color: #10B981;      /* Green for success states */
+    --danger-color: #EF4444;       /* Red for danger/error states */
+    --linkedin-color: #0A66C2;     /* LinkedIn blue */
+    --youtube-color: #FF0000;      /* YouTube red */
+    --github-color: #24292F;       /* GitHub dark */
+    --twitter-color: #1DA1F2;      /* Twitter blue */
+}
+
 /* Base styles */
 .container {
     z-index: 2 !important;
@@ -82,7 +99,7 @@
 }
 
 .gdpr-notification button {
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     padding: 8px 15px;
@@ -92,7 +109,7 @@
 }
 
 .gdpr-notification button:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-hover);
 }
 
 @media screen and (min-width: 769px) {
@@ -134,7 +151,7 @@
     height: 16px;
     left: 12px;
     background-color: #fff;
-    border: 3px solid #485fc7;
+    border: 3px solid var(--primary-color);
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -143,7 +160,7 @@
 }
 
 .timeline-item:hover::before {
-    background-color: #485fc7;
+    background-color: var(--primary-color);
 }
 
 .timeline-content {
@@ -170,21 +187,97 @@
     margin-bottom: 4px;
     font-size: 1.1em;
     font-weight: 600;
-    color: #363636;
+    color: var(--dark-black);
 }
 
 .timeline-company {
-    color: #485fc7;
+    color: var(--primary-color);
     font-weight: 500;
     margin-bottom: 0;
 }
 
 /* Tab styles */
 .tabs.is-toggle li.is-active a {
-    color: #f5f5f5 !important;
+    background-color: var(--dark-black) !important;
+    border-color: var(--dark-black) !important;
+    color: var(--light-white) !important;
 }
 
-/* Also add back the tab content margin that was removed */
-.content-tab li {
-    margin-top: 10px !important;
+.tabs.is-toggle a {
+    border-color: var(--border-color);
+}
+
+.tabs.is-toggle a:hover {
+    background-color: var(--light-white);
+    border-color: var(--border-color);
+}
+
+/* Update existing color references */
+.has-text-info {
+    color: var(--primary-color) !important;
+}
+
+.has-text-danger {
+    color: var(--danger-color) !important;
+}
+
+.button.is-info.is-outlined {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.button.is-info.is-outlined:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button.is-danger.is-outlined {
+    color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.button.is-danger.is-outlined:hover {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* Update social media button colors */
+.button.is-info.is-outlined[href*="twitter"] {
+    color: var(--twitter-color);
+    border-color: var(--twitter-color);
+}
+
+.button.is-info.is-outlined[href*="twitter"]:hover {
+    background-color: var(--twitter-color);
+    color: white;
+}
+
+.button.is-info.is-outlined[href*="linkedin"] {
+    color: var(--linkedin-color);
+    border-color: var(--linkedin-color);
+}
+
+.button.is-info.is-outlined[href*="linkedin"]:hover {
+    background-color: var(--linkedin-color);
+    color: white;
+}
+
+.button.is-danger.is-outlined[href*="youtube"] {
+    color: var(--youtube-color);
+    border-color: var(--youtube-color);
+}
+
+.button.is-danger.is-outlined[href*="youtube"]:hover {
+    background-color: var(--youtube-color);
+    color: white;
+}
+
+.button.is-dark.is-outlined[href*="github"] {
+    color: var(--github-color);
+    border-color: var(--github-color);
+}
+
+.button.is-dark.is-outlined[href*="github"]:hover {
+    background-color: var(--github-color);
+    color: white;
 }
