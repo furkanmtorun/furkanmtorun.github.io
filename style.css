@@ -1,0 +1,190 @@
+/* Base styles */
+.container {
+    z-index: 2 !important;
+}
+
+.hero.is-light {
+    background: #ffffff !important;
+}
+
+/* Profile section */
+.profile_photo {
+    object-fit: cover;
+    object-position: bottom;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    margin: -10px 0 10px;
+}
+
+.info_text {
+    text-align: justify;
+}
+
+/* Button styles */
+.button.is-medium {
+    font-size: 1.05rem !important;
+}
+
+/* Text styles */
+.title,
+.subtitle {
+    cursor: default !important;
+}
+
+/* Table styles */
+.sticky-table-row {
+    position: sticky;
+    top: 30px;
+    background-color: white;
+    z-index: 1;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.sticky-table-row:first-child {
+    top: 0;
+}
+
+.sticky-table-row:nth-child(2) {
+    top: 30px;
+}
+
+.vertical-limit {
+    max-height: 430px;
+    overflow-y: auto;
+}
+
+/* GDPR Notification */
+.gdpr-notification {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gdpr-notification p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.gdpr-notification button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gdpr-notification button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width: 769px) {
+    .hero.is-medium .hero-body {
+        padding-bottom: 6rem !important;
+        padding-top: 8rem !important;
+    }
+}
+
+/* Timeline styling */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #e8e8e8;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 5px 40px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 12px;
+    background-color: #fff;
+    border: 3px solid #485fc7;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover::before {
+    background-color: #485fc7;
+}
+
+.timeline-content {
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.timeline-date {
+    color: #666;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.timeline-title {
+    margin-bottom: 4px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #363636;
+}
+
+.timeline-company {
+    color: #485fc7;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Tab styles */
+.tabs.is-toggle li.is-active a {
+    color: #f5f5f5 !important;
+}
+
+/* Also add back the tab content margin that was removed */
+.content-tab li {
+    margin-top: 10px !important;
+}
