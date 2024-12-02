@@ -196,6 +196,13 @@
     margin-bottom: 0;
 }
 
+.timeline-description {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
 /* Tab styles */
 .tabs.is-toggle li.is-active a {
     background-color: var(--dark-black) !important;
@@ -303,4 +310,25 @@
 .skill-pill i {
     font-size: 0.9rem;
     color: #3273dc;
+}
+
+/* Add smooth underline animation for text links */
+a:not(.button) {
+    position: relative;
+    text-decoration: none;
+}
+
+a:not(.button)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease-in-out;
+}
+
+a:not(.button):hover::after {
+    width: 100%;
 }
