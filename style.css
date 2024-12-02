@@ -312,23 +312,69 @@
     color: #3273dc;
 }
 
-/* Add smooth underline animation for text links */
-a:not(.button) {
+/* Update the link underline animation selector to exclude YouTube banner */
+a:not(.button):not(.youtube-banner a) {
     position: relative;
     text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s ease-in-out;
 }
 
+a:not(.button):not(.youtube-banner a):hover {
+    background-size: 100% 1px;
+}
+
+/* Remove the old pseudo-element based animation */
 a:not(.button)::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: currentColor;
-    transition: width 0.3s ease-in-out;
+    content: none;
 }
 
-a:not(.button):hover::after {
-    width: 100%;
+/* YouTube banner styling */
+.youtube-banner {
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0 0 20px 40px;
+    max-width: calc(100% - 80px);
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.youtube-banner a {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--youtube-color);
+    transition: color 0.3s ease;
+}
+
+.youtube-banner:hover {
+    background: var(--youtube-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.youtube-banner:hover a {
+    color: var(--light-white) !important;
+
+}
+
+.youtube-banner i {
+    font-size: 1.2em;
+}
+
+/* Adjust timeline for talks */
+.timeline-item .timeline-title a {
+    color: var(--dark-black);
+    font-weight: 600;
+}
+
+.timeline-item .timeline-company a {
+    color: var(--primary-color);
 }
