@@ -94,11 +94,11 @@
                     <li class="tab" onclick="openTab(event,'Portfolio')">
                       <a>Portfolio</a>
                     </li>
-                    <li class="tab" onclick="openTab(event,'TechStack')">
-                      <a>Tech Stack</a>
-                    </li>
                     <li class="tab" onclick="openTab(event,'Talks')">
                       <a>Talks</a>
+                    </li>
+                    <li class="tab" onclick="openTab(event,'TechStack')">
+                      <a>Tech Stack</a>
                     </li>
                     <li class="tab" onclick="openTab(event,'Honors')">
                       <a>Honors</a>
@@ -128,7 +128,7 @@
                             <div class="timeline-content">
                                 <div class="timeline-date">11/2022 - Present • 2+ years</div>
                                 <div class="timeline-title">Researcher and Data Scientist</div>
-                                <div class="timeline-company">Exact Sciences</div>
+                                <div class="timeline-company">Exact Sciences - Munich, Germany</div>
                             </div>
                         </div>
                         
@@ -136,7 +136,7 @@
                             <div class="timeline-content">
                                 <div class="timeline-date">06/2020 - 05/2022 • 2 years</div>
                                 <div class="timeline-title">Data Scientist</div>
-                                <div class="timeline-company">OmicEra Diagnostics</div>
+                                <div class="timeline-company">OmicEra Diagnostics - Munich, Germany</div>
                             </div>
                         </div>
                         
@@ -144,68 +144,58 @@
                             <div class="timeline-content">
                                 <div class="timeline-date">02/2018 - 01/2020 • 2 years</div>
                                 <div class="timeline-title">Computational Biologist</div>
-                                <div class="timeline-company">Rare Disease Lab (Kaplan Lab)</div>
+                                <div class="timeline-company">Rare Disease Lab - Kayseri, Turkey</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Portfolio Tab -->
                 <div id="Portfolio" class="content-tab" style="display:none">
-                  <h5 class="subtitle is-6 info_text">
-                    <strong>Academic Works and Open-Source Projects:</strong>
-                    <ul>
-                      <li>► Publications are listed on <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank" class="has-text-info">my Google Scholar profile</a>.</li>
-                      <li>► Side projects are available on <a href="https://github.com/furkanmtorun/" target="_blank" class="has-text-info">my GitHub profile</a>.</li>
-                    </ul>
-                    <br>
-                    <strong>Research Areas and Interests:</strong>
-                    <br>
-                    <ul>
-                      <li>I am always captivated by the complexity of cells and the dynamics within them. Consequently, my main interests include: </li>
-                      <li>► Data Science & Engineering</li>
-                      <li>► (AWS) Cloud-native Development</li>
-                      <li>► Machine Learning</li>
-                      <li>► Bioinformatics / Computational Biology</li>
-                      <li>► Genetics & Omics Data Analysis</li>
-                    </ul>
-                  </h5>
-                </div>
-                <!-- TechStack Tab -->
-                <div id="TechStack" class="content-tab" style="display:none">
-                    <table class="table is-striped is-bordered">
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th>Skills/Technologies</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Programming Languages</td>
-                                <td>Python, Bash, JavaScript</td>
-                            </tr>
-                            <tr>
-                                <td>Web Development</td>
-                                <td>Flask, Django, HTML/CSS, jQuery</td>
-                            </tr>
-                            <tr>
-                                <td>Cloud and IaC</td>
-                                <td>AWS, Terraform, Packer</td>
-                            </tr>
-                            <tr>
-                                <td>Machine/Deep Learning</td>
-                                <td>Scikit-learn, XGBoost/LGBM, PyTorch</td>
-                            </tr>
-                            <tr>
-                                <td>Others</td>
-                                <td>Docker, REST and GraphQL APIs, SQL/NoSQL Databases, CI/CD, BDD, Airflow, Metaflow, Celery, DVC</td>
-                            </tr>
-                            <tr>
-                                <td>Bioinformatics</td>
-                                <td>Genetics/Genomics, Biomarker discovery, Variant calling &amp; annotation, RNA-Seq, CLI/GUI tool and database/platform development</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                  <div class="compact-portfolio">
+                    <!-- Research & Publications -->
+                    <div class="portfolio-card">
+                      <div class="card-header">
+                        <span class="icon"><i class="fa fa-flask"></i></span>
+                        <h4>Research Focus</h4>
+                      </div>
+                      <div class="card-content">
+                        <p>Computational biology, genetics and machine learning research with focus on omics data analysis. 
+                          <br />
+                          <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank" class="has-text-info">View Publications on Google Scholar→</a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="portfolio-card">
+                      <div class="card-header">
+                        <span class="icon"><i class="fa fa-code"></i></span>
+                        <h4>Open Source</h4>
+                      </div>
+                      <div class="card-content">
+                        <p>Building various side projects, from bioinformatics to cloud applications. 
+                          <a href="https://github.com/furkanmtorun/" target="_blank" class="has-text-info">View Projects →</a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Skills Pills -->
+                    <div class="portfolio-card">
+                      <div class="card-header">
+                        <span class="icon"><i class="fa fa-star"></i></span>
+                        <h4>Core Skills</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="skills-container">
+                          <span class="skill-pill"><i class="fa fa-database"></i> Data Science / Engineering</span>
+                          <span class="skill-pill"><i class="fa fa-cloud"></i> AWS</span>
+                          <span class="skill-pill"><i class="fa fa-cogs"></i> Machine Learning</span>
+                          <span class="skill-pill"><i class="fa fa-code"></i> Bioinformatics / Computational Biology</span>
+                          <span class="skill-pill"><i class="fa fa-flask"></i> Genetics / Omics</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- Talks Tab -->
                 <div id="Talks" class="content-tab vertical-limit" style="display:none;">
@@ -252,6 +242,43 @@
                                 <td>Poster about <a class="has-text-info" href="https://doi.org/10.1093/nar/gkab939" target="_blank">ConVarT project</a> at <a class="has-text-info" href="https://www.eshg.org/" target="_blank">52nd European Human Genetics Conference</a></td>
                                 <td>15-18 June 2019</td>
                                 <td>Gothenburg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- TechStack Tab -->
+                <div id="TechStack" class="content-tab" style="display:none">
+                    <table class="table is-striped is-bordered">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Skills/Technologies</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Programming Languages</td>
+                                <td>Python, Bash, JavaScript</td>
+                            </tr>
+                            <tr>
+                                <td>Web Development</td>
+                                <td>Flask, Django, HTML/CSS, jQuery</td>
+                            </tr>
+                            <tr>
+                                <td>Cloud and IaC</td>
+                                <td>AWS, Terraform, Packer</td>
+                            </tr>
+                            <tr>
+                                <td>Machine/Deep Learning</td>
+                                <td>Scikit-learn, XGBoost/LGBM, PyTorch</td>
+                            </tr>
+                            <tr>
+                                <td>Others</td>
+                                <td>Docker, REST and GraphQL APIs, SQL/NoSQL Databases, CI/CD, BDD, Airflow, Metaflow, Celery, DVC</td>
+                            </tr>
+                            <tr>
+                                <td>Bioinformatics</td>
+                                <td>Genetics/Genomics, Biomarker discovery, Variant calling &amp; annotation, RNA-Seq, CLI/GUI tool and database/platform development</td>
                             </tr>
                         </tbody>
                     </table>
