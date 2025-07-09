@@ -108,7 +108,7 @@ body {
 }
 
 .hero-description {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   color: #64748b;
   margin-bottom: 2rem;
   line-height: 1.7;
@@ -162,8 +162,8 @@ body {
 
 .profile-container {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 330px;
+  height: 330px;
   margin: 0 auto 2rem;
 }
 
