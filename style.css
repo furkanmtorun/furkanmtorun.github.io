@@ -847,7 +847,6 @@ body {
 }
 
 .badge.cover-feature:hover {
-  background: var(--text-primary);
   transform: translateY(-1px);
 }
 
