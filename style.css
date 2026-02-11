@@ -110,7 +110,7 @@ body {
   padding: 0.5rem 0.75rem;
   text-decoration: none;
   color: var(--text-secondary);
-  border-radius: 0.5rem;
+  border-radius: 0;
   transition: all 0.2s;
   font-size: 0.875rem;
 }
@@ -131,7 +131,7 @@ body {
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s;
   display: flex;
@@ -349,7 +349,7 @@ body {
 
 .timeline-item {
   background: var(--bg-card);
-  border-radius: 1rem;
+  border-radius: 0;
   padding: 2rem;
   margin-bottom: 2rem;
   border-left: 4px solid var(--accent-color);
@@ -379,7 +379,7 @@ body {
   background: var(--bg-muted);
   color: var(--text-secondary);
   padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   font-size: 0.875rem;
   transition: all 0.3s ease;
 }
@@ -407,7 +407,7 @@ body {
   background: var(--bg-muted);
   color: var(--text-secondary);
   padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   font-size: 0.875rem;
   transition: all 0.3s ease;
 }
@@ -424,7 +424,7 @@ body {
 .portfolio-card {
   background: var(--bg-card);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0;
   text-align: center;
   box-shadow: 0 4px 6px -1px var(--shadow-light);
   transition: all 0.2s;
@@ -487,7 +487,7 @@ body {
   background: var(--bg-muted);
   color: var(--text-secondary);
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   font-size: 0.875rem;
   transition: all 0.3s ease;
 }
@@ -523,7 +523,7 @@ body {
 .talk-card {
   background: var(--bg-card);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0;
   box-shadow: 0 4px 6px -1px var(--shadow-light);
   transition: all 0.2s;
 }
@@ -536,7 +536,7 @@ body {
   background: var(--bg-muted);
   color: var(--text-secondary);
   padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   font-size: 0.875rem;
   display: inline-block;
   margin-bottom: 1rem;
@@ -566,7 +566,7 @@ body {
 .honor-item {
   background: var(--bg-card);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0;
   margin-bottom: 2rem;
   border-left: 4px solid #f59e0b;
   box-shadow: 0 4px 6px -1px var(--shadow-light);
@@ -577,7 +577,7 @@ body {
   background: #fef3c7;
   color: #92400e;
   padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   font-size: 0.875rem;
   display: inline-block;
   margin-bottom: 1rem;
@@ -599,7 +599,7 @@ body {
 /* Tech Stack */
 .tech-table {
   background: var(--bg-card);
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 4px 6px -1px var(--shadow-light);
   max-width: 1000px;
@@ -641,7 +641,7 @@ body {
 .volunteer-item {
   background: var(--bg-card);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0;
   margin-bottom: 2rem;
   border-left: 4px solid #10b981;
   box-shadow: 0 4px 6px -1px var(--shadow-light);
@@ -666,7 +666,7 @@ body {
   background: var(--bg-muted);
   color: var(--text-secondary);
   padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   font-size: 0.875rem;
   transition: all 0.3s ease;
 }
@@ -689,7 +689,7 @@ body {
 .blog-card {
   background: var(--bg-card);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0;
   box-shadow: 0 4px 6px -1px var(--shadow-light);
   transition: all 0.2s;
   cursor: pointer;
