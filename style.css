@@ -768,7 +768,7 @@ body {
 
 .publication-item {
   background: var(--bg-card);
-  border-radius: 1rem;
+  border-radius: 0;
   padding: 2rem;
   margin-bottom: 2rem;
   border-left: 4px solid var(--accent-color);
@@ -885,7 +885,7 @@ body {
 .contact-card {
   background: var(--bg-card);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0;
   text-align: center;
   box-shadow: 0 4px 6px -1px var(--shadow-light);
   transition: all 0.2s;
