@@ -1,521 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V69JP3D22N"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'G-V69JP3D22N');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furkan M. Torun</title>
-    <meta name="description" content="Furkan M. Torun is a researcher and data engineer with expertise in bioinformatics/computational biology." />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="shortcut icon" type="image/png" href="https://user-images.githubusercontent.com/49681382/165621959-1991c02b-2682-4e35-8b46-2bc52a6fd2c5.png" />
-    <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V69JP3D22N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-V69JP3D22N');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furkan M. Torun</title>
+  <meta name="description"
+    content="Furkan M. Torun is a researcher and data engineer with expertise in bioinformatics/computational biology." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="shortcut icon" type="image/png"
+    href="https://user-images.githubusercontent.com/49681382/165621959-1991c02b-2682-4e35-8b46-2bc52a6fd2c5.png" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Fixed Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">Furkan M. Torun</div>
-            <div class="nav-menu">
-                <a href="#about" class="nav-link active" data-section="about">
-                    <span>Me</span>
-                </a>
-                <a href="#experience" class="nav-link" data-section="experience">
-                    <span>Experience</span>
-                </a>
-                <a href="#talks" class="nav-link" data-section="talks">
-                    <span>Talks</span>
-                </a>
-                <a href="#publications" class="nav-link" data-section="publications">
-                    <span>Publications</span>
-                </a>
-                <a href="#honors" class="nav-link" data-section="honors">
-                    <span>Honors</span>
-                </a>
-                <a href="#techstack" class="nav-link" data-section="techstack">
-                    <span>Tech Stack</span>
-                </a>
-                <a href="#volunteering" class="nav-link" data-section="volunteering">
-                    <span>Volunteering</span>
-                </a>
-                <!-- <a href="#blog" class="nav-link" data-section="blog">
-                    <span>Blog</span>
-                </a> -->
-                <a href="#contact" class="nav-link" data-section="contact">
-                    <span>Contact</span>
-                </a>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="about" class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hey, I'm <span class="highlight">Furkan</span> 👋</h1>
-                    <p class="hero-description">
-                        I'm a Data Engineer at <a href="https://exactsciences.com" target="_blank" class="link">Exact Sciences</a>, 
-                        with a background in molecular biology and genetics, and I have previously worked at a research lab and a biotech startup.
-                        <br><br>
-                        My work integrates data science, machine learning, and cloud computing to analyze large-scale omics datasets and deliver actionable biological insights — 
-                        <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank" class="link"><i class="fa-brands fa-google-scholar"></i> view my publications</a>.
-                        <br><br>
-                        I also develop open-source tools for bioinformatics and build scalable, cloud-native data products — <a href="https://github.com/furkanmtorun/" target="_blank" class="link"><i class="fab fa-github"></i> explore my projects</a>.
-                        <br><br>
-                        So, let's continue 🧬 <strong><em>debugging DNA software!</em></strong>
-                    </p>
-                    <div class="location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Munich, Bavaria, Germany</span>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="profile-container">
-                        <img src="https://user-images.githubusercontent.com/49681382/165621959-1991c02b-2682-4e35-8b46-2bc52a6fd2c5.png" alt="Furkan M. Torun" class="profile-image">
-                        <div class="profile-name-overlay">Furkan M. Torun</div>
-                        <div class="profile-badge">
-                            <i class="fas fa-code"></i>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/furkanmtorun/" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/furkanmtorun" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank" class="social-link">
-                            <i class="fa-brands fa-google-scholar"></i>
-                        </a>
-                        <a href="https://x.com/furkanmtorun" target="_blank" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@furkanmtorun" target="_blank" class="social-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="mailto:furkanmtorun@gmail.com" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
-                            Get in Touch
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Experience</h2>
-                <p>My professional journey</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Engineer</h3>
-                            <span class="timeline-date">11/2022 — Present</span>
-                        </div>
-                        <div class="timeline-company">
-                            <a href="https://exactsciences.com" target="_blank" class="link">Exact Sciences</a> 
-                            — <i class="fas fa-map-marker-alt"></i> Munich, Germany
-                        </div>
-                        <ul class="experience-list">
-                            <li>Design, implement, and optimize scalable data pipelines on AWS for advanced proteomics data analysis and governance.</li>
-                            <li>Create cloud-based web dashboards on AWS to streamline experimental workflows.</li>
-                            <li>Implement and fine-tune machine learning models for large-scale omics data analysis.</li>
-                            <li>Develop omics data platform to drive biomarker discovery and advance cancer research.</li>
-                        </ul>
-                        <div class="tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">AWS</span>
-                            <span class="tag">Terraform</span>
-                            <span class="tag">Packer</span>
-                            <span class="tag">Airflow</span>
-                            <span class="tag">ML</span>
-                            <span class="tag">Django</span>
-                            <span class="tag">Bash</span>
-                            <span class="tag">Biomarker Discovery</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Scientist</h3>
-                            <span class="timeline-date">06/2020 — 05/2022</span>
-                        </div>
-                        <div class="timeline-company">OmicEra Diagnostics — <i class="fas fa-map-marker-alt"></i> Munich, Germany</div>
-                        <ul class="experience-list">
-                            <li>Built a comprehensive real-time quality control pipeline and monitoring dashboard for mass spectrometry-based proteomics.</li>
-                            <li>Developed OmicLearn, an open-access, user-friendly ML platform for omics data.</li>
-                            <li>Applied machine learning and deep learning techniques to proteomics data for biomarker discovery.</li>
-                            <li>Published two scientific papers, including one as the first author.</li>
-                        </ul>
-                        <div class="tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Machine and Deep Learning</span>
-                            <span class="tag">Statistics</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">REST APIs</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">CI/CD</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Computational Biologist</h3>
-                            <span class="timeline-date">02/2018 — 01/2020</span>
-                        </div>
-                        <div class="timeline-company">Rare Disease Lab — <i class="fas fa-map-marker-alt"></i> Kayseri, Turkey</div>
-                        <ul class="experience-list">
-                            <li>Created end-to-end bioinformatics pipelines for comparative genomics analysis.</li>
-                            <li>Built ConVarT, a search engine for missense variants across humans and other organisms.</li>
-                            <li>Developed MSABrowser, a JavaScript library for visualizing sequence alignments.</li>
-                            <li>Published two scientific papers, including one as the first author.</li>
-                        </ul>
-                        <div class="tags">
-                            <span class="tag">Bioinformatics/Computational Biology</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">Bash</span>
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">Git</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Talks Section -->
-    <section id="talks" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Talks</h2>
-                <p>Conference presentations and speaking engagements</p>
-                <a href="https://www.youtube.com/@furkanmtorun" target="_blank" class="youtube-link">
-                    <i class="fab fa-youtube"></i>
-                    View Recordings on YouTube
-                </a>
-            </div>
-            <div class="talks-grid">
-                <div class="talk-card">
-                    <div class="talk-date">21 May 2024</div>
-                    <h3><a href="https://www.meetup.com/pymunich/events/299650733/" target="_blank">Become a Data Storyteller with Streamlit →</a></h3>
-                    <p><a href="https://www.meetup.com/pymunich/" target="_blank" class="link">PyMunich Meetup</a> — <i class="fas fa-map-marker-alt"></i> Munich, Germany</p>
-                </div>
-                <div class="talk-card">
-                    <div class="talk-date">20 November 2023</div>
-                    <h3><a href="https://www.meetup.com/pydata-prague/events/297072175/" target="_blank">Become a Data Storyteller with Streamlit →</a></h3>
-                    <p><a href="https://pydata.cz/" target="_blank" class="link">PyData Meetup</a> — <i class="fas fa-map-marker-alt"></i> Prague, Czech Republic</p>
-                </div>
-                <div class="talk-card">
-                    <div class="talk-date">16 September 2023</div>
-                    <h3><a href="https://cz.pycon.org/2023/program/talks/73/" target="_blank">How to Build an Open-Source ML Platform in Biology? →</a></h3>
-                    <p><a href="https://cz.pycon.org/2023/" target="_blank" class="link">PyCon CZ</a> — <i class="fas fa-map-marker-alt"></i> Prague, Czech Republic</p>
-                </div>
-                <div class="talk-card">
-                    <div class="talk-date">26 July 2023</div>
-                    <h3><a href="https://www.eventbrite.de/e/bits-in-bio-munich-july-edition-tickets-663259526097" target="_blank">Organizer & Moderator: Bits in Bio | July Edition →</a></h3>
-                    <p><a href="https://bitsinbio.org/" target="_blank" class="link">Bits in Bio</a> — <i class="fas fa-map-marker-alt"></i> Munich, Germany</p>
-                </div>
-                <div class="talk-card">
-                    <div class="talk-date">22 June 2023</div>
-                    <h3><a href="https://www.meetup.com/de-DE/munich-datageeks/events/293903743/" target="_blank">Application of machine learning on biological datasets →</a></h3>
-                    <p><a href="https://www.meetup.com/munich-datageeks/" target="_blank" class="link">Munich DataGeeks Meetup</a> — <i class="fas fa-map-marker-alt"></i> Munich, Germany</p>
-                </div>
-                <div class="talk-card">
-                    <div class="talk-date">7 June 2023</div>
-                    <h3><a href="https://www.meetup.com/PyLadiesMunich/events/293371897" target="_blank">Application of machine learning on biological datasets →</a></h3>
-                    <p><a href="https://www.meetup.com/pyladiesmunich/" target="_blank" class="link">PyLadies Meetup</a> — <i class="fas fa-map-marker-alt"></i> Munich, Germany</p>
-                </div>
-                <div class="talk-card">
-                    <div class="talk-date">28 May 2023</div>
-                    <h3><a href="https://2023.pycon.it/en/event/how-to-build-an-open-source-machine-learning-platform-in-biology" target="_blank">How to Build an Open-Source ML Platform in Biology? →</a></h3>
-                    <p><a href="https://pycon.it" target="_blank" class="link">PyCon IT</a> — <i class="fas fa-map-marker-alt"></i> Florence, Italy</p>
-                </div>
-                <div class="talk-card">
-                    <div class="talk-date">15-18 June 2019</div>
-                    <h3><a href="https://doi.org/10.1093/nar/gkab939" target="_blank">ConVarT poster presentation at ESHG →</a></h3>
-                    <p><a href="https://www.eshg.org/" target="_blank" class="link">52nd European Human Genetics Conf.</a> — <i class="fas fa-map-marker-alt"></i> Gothenburg, Sweden</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Publications</h2>
-                <p>Research contributions and scientific publications</p>
-                <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank" class="scholar-link" style="color: #1976d2;">
-                    <i class="fa-brands fa-google-scholar"></i>
-                    View Publications on Google Scholar
-                </a>
-            </div>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <h3><a href="https://doi.org/10.1021/acs.jproteome.2c00473" target="_blank" class="publication-title">Transparent exploration of machine learning for biomarker discovery from proteomics and omics data →</a></h3>
-                        <p class="publication-authors">
-                            <strong>Torun, F.M.</strong>, Winter, S.V., Doll, S., Riese, F.M., Vorobyev, A., Mueller-Reif, J.B., Geyer, P.E., & Strauss, M.T.
-                        </p>
-                        <p class="publication-journal"><em>Journal of Proteome Research</em> • DOI: 10.1021/acs.jproteome.2c00473</p>
-                        <div class="publication-badges">
-                            <span class="badge year">2022</span>
-                            <span class="badge first-author">First Author</span>
-                            <a href="https://pubs.acs.org/toc/jprobs/22/2" target="_blank" class="badge cover-feature">Featured on the cover of the February 2023 issue of the journal →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <h3><a href="https://doi.org/10.1093/nar/gkab939" target="_blank" class="publication-title">ConVarT: a search engine for matching human genetic variants with variants from non-human species →</a></h3>
-                        <p class="publication-authors">
-                            Pir, M.S., Bilgin, H.I., Sayici, A., Coskun, F., <strong>Torun, F.M.</strong>, Zhao, P., Kang, Y., Cevik, S., Kaplan, O.I.
-                        </p>
-                        <p class="publication-journal"><em>Nucleic Acids Research</em> • DOI: 10.1093/nar/gkab939</p>
-                        <div class="publication-badges">
-                            <span class="badge year">2022</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <h3><a href="https://doi.org/10.15252/emmm.202114167" target="_blank" class="publication-title">High‐resolution serum proteome trajectories in COVID‐19 reveal patient‐specific seroconversion →</a></h3>
-                        <p class="publication-authors">
-                            Geyer, P., Arend, F., Doll, S., Louiset, M., Virreira Winter, S., Mueller-Reif, J. & <strong>Torun, F.M.</strong> et al.
-                        </p>
-                        <p class="publication-journal"><em>EMBO Molecular Medicine</em> • DOI: 10.15252/emmm.202114167</p>
-                        <div class="publication-badges">
-                            <span class="badge year">2021</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <h3><a href="https://doi.org/10.1093/bioadv/vbab009" target="_blank" class="publication-title">MSABrowser: dynamic and fast visualization of sequence alignments, variations, and annotations →</a></h3>
-                        <p class="publication-authors">
-                            <strong>Torun, F.M.</strong>, Bilgin, H.I. and Kaplan, O.I.
-                        </p>
-                        <p class="publication-journal"><em>Bioinformatics Advances</em> • DOI: 10.1093/bioadv/vbab009</p>
-                        <div class="publication-badges">
-                            <span class="badge year">2021</span>
-                            <span class="badge first-author">First Author</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Honors Section -->
-    <section id="honors" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Honors</h2>
-                <p>Recognition and achievements</p>
-            </div>
-            <div class="honors-list">
-                <div class="honor-item">
-                    <div class="honor-date">February 2023</div>
-                    <h3>Journal Cover Feature</h3>
-                    <p>My first-authored paper <a href="https://doi.org/10.1021/acs.jproteome.2c00473" target="_blank" class="link">OmicLearn</a> is featured <a href="https://pubs.acs.org/toc/jprobs/22/2" target="_blank" class="link">on the cover of Journal of Proteome Research</a>.</p>
-                </div>
-                <div class="honor-item">
-                    <div class="honor-date">June 2022</div>
-                    <h3>Academic Excellence</h3>
-                    <p>Graduated with a high honor degree (3.63/4.00) and 1st ranked in Faculty of Life and Natural Sciences.</p>
-                </div>
-                <div class="honor-item">
-                    <div class="honor-date">May 2022</div>
-                    <h3>Researcher Travel Fellowship</h3>
-                    <p>Received the Travel Fellowship by <a href="https://open-bio.org/" target="_blank" class="link">Open Bioinformatics Foundation (OBF)</a>.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section id="techstack" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Tech Stack</h2>
-                <p>Technologies and tools I work with</p>
-            </div>
-            <div class="tech-table">
-                <div class="tech-row">
-                    <div class="tech-category"><strong>Core Skills</strong></div>
-                    <div class="tech-skills">Data Science / Engineering, Amazon Web Services (AWS), 
-                        <br /> Machine Learning, Omics, Bioinformatics / Computational Biology
-                    </div>
-                </div>
-                <div class="tech-row">
-                    <div class="tech-category">Programming Languages</div>
-                    <div class="tech-skills">Python, Bash, JavaScript</div>
-                </div>
-                <div class="tech-row">
-                    <div class="tech-category">Web Development</div>
-                    <div class="tech-skills">Flask, Django, HTML/CSS, jQuery</div>
-                </div>
-                <div class="tech-row">
-                    <div class="tech-category">Cloud and IaC</div>
-                    <div class="tech-skills">AWS, Terraform, Packer</div>
-                </div>
-                <div class="tech-row">
-                    <div class="tech-category">Machine/Deep Learning</div>
-                    <div class="tech-skills">Scikit-learn, XGBoost/LGBM, PyTorch</div>
-                </div>
-                <div class="tech-row">
-                    <div class="tech-category">Others</div>
-                    <div class="tech-skills">Docker, REST and GraphQL APIs, SQL/NoSQL Databases, Airflow, Celery, <br> 
-                        CI/CD (Github Actions/GitLab Pipelines), DVC, BDD, Agile/Scrum Methodology</div>
-                </div>
-                <div class="tech-row">
-                    <div class="tech-category">Bioinformatics</div>
-                    <div class="tech-skills">Genetics/Genomics, Biomarker discovery, Variant calling & annotation, <br> RNA-Seq, CLI/GUI tool and database/platform development</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Volunteering Section -->
-    <section id="volunteering" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Volunteering</h2>
-                <p>Community involvement and leadership</p>
-            </div>
-            <div class="volunteering-list">
-                <div class="volunteer-item">
-                    <div class="volunteer-header">
-                        <h3>Organizer</h3>
-                        <span class="volunteer-date">04/2023 — 07/2024</span>
-                    </div>
-                    <div class="volunteer-org">
-                        <a href="https://www.bitsinbio.org/" target="_blank" class="link">Bits in Bio</a> — <i class="fas fa-map-marker-alt"></i> Munich, Germany
-                    </div>
-                    <p>Brought everyone interested in biotechnology, management, bioinformatics, or software in life sciences together with regular in-person events and sponsored meetups.</p>
-                </div>
-                <div class="volunteer-item">
-                    <div class="volunteer-header">
-                        <h3>Co-founder</h3>
-                        <span class="volunteer-date">08/2018 — 01/2020</span>
-                    </div>
-                    <div class="volunteer-org">Rare Diseases — <i class="fas fa-map-marker-alt"></i> Kayseri, Turkey</div>
-                    <p>Established the platform and led the team for an open-access database about rare diseases in Turkish and creating public awareness.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section — Future -->
-    <!-- <section id="blog" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Blog</h2>
-                <p>Thoughts, tutorials, and insights on bioinformatics and data science</p>
-            </div>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-meta">
-                        <span>202N-00-00</span>
-                        <span>NN min read</span>
-                    </div>
-                    <h3>Blog Title</h3>
-                    <p>Blog 1 sentence summary.</p>
-                    <div class="blog-tags">
-                        <span class="blog-tag">Python</span>
-                        <span class="blog-tag">Bioinformatics</span>
-                        <span class="blog-tag">Cloud</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Let's Work Together</h2>
-                <p>I'm always interested in new opportunities, exciting projects and <br> giving talks in conferences/events.</p>
-            </div>
-            <div class="contact-grid-wide">
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p><a href="mailto:furkanmtorun@gmail.com" class="link">furkanmtorun[at]gmail[dot]com</a></p>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-link"></i>
-                    <h3>Connect</h3>
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/furkanmtorun/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/furkanmtorun" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank"><i class="fa-brands fa-google-scholar"></i></a>
-                        <a href="https://x.com/furkanmtorun" target="_blank" title="Twitter/X"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/@furkanmtorun" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>© <span id="currentYear"></span> | Furkan M. Torun</p>
-                <div class="footer-links">
-                    <a href="mailto:furkanmtorun@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/furkanmtorun/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/furkanmtorun" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank"><i class="fa-brands fa-google-scholar"></i></a>
-                    <a href="https://x.com/furkanmtorun" target="_blank" title="Twitter/X"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/@furkanmtorun" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- GDPR Notification Badge -->
-    <div class="gdpr-notification" id="gdprNotification">
-      <p>We use cookies for analytics purposes. By continuing to use this website, you agree to our use of cookies.</p>
-      <button id="okButton" onclick="closeNotification()">Got it!</button>
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Furkan M. Torun</a>
+      <div class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#talks">Talks</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#honors">Honors</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#volunteering">Volunteering</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun icon-sun"></i>
+          <i class="fas fa-moon icon-moon"></i>
+        </button>
+      </div>
+      <div class="nav-mobile-icons">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun icon-sun"></i>
+          <i class="fas fa-moon icon-moon"></i>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars icon-menu"></i>
+          <i class="fas fa-times icon-close"></i>
+        </button>
+      </div>
     </div>
+    <div class="nav-mobile-menu">
+      <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="#volunteering">Volunteering</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Schema.org -->
-    <script type="application/ld+json">
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-subtitle">Data Engineer &middot; Munich, Germany</p>
+        <h1 class="hero-title">Furkan M. Torun</h1>
+        <p class="hero-description">
+          I'm a Data Engineer at <a href="https://www.exactsciences.com/" target="_blank"
+            rel="noopener noreferrer">Exact Sciences</a>,
+          with a background in molecular biology and genetics, and I have previously worked at a biotech startup and a
+          research lab.
+        </p>
+        <p class="hero-description">
+          My work integrates cloud computing, data science, bioinformatics and machine learning to build scalable and
+          cloud-native products to analyze large-scale omics datasets.
+          &mdash; <span class="hero-code">debugging DNA software.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="mailto:furkanmtorun@gmail.com" class="btn-primary">
+            <i class="fas fa-envelope"></i>
+            Get in Touch
+          </a>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/furkanmtorun" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank" rel="noopener noreferrer"
+              aria-label="Google Scholar">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://github.com/furkanmtorun" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/@furkanmtorun" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://x.com/furkanmtorun" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-frame">
+          <div class="hero-image-border hero-image-border-1"></div>
+          <div class="hero-image-border hero-image-border-2"></div>
+          <img
+            src="https://user-images.githubusercontent.com/49681382/165621959-1991c02b-2682-4e35-8b46-2bc52a6fd2c5.png"
+            alt="Furkan M. Torun" width="280" height="280">
+          <div class="hero-image-caption">
+            <!-- <span class="hero-image-field">debugging DNA software!</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#experience" aria-label="Scroll to experience">
+        <i class="fas fa-arrow-down animate-bounce"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Career</p>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My professional journey</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="experience-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">11/2022 — Present</span>
+          <div class="experience-content">
+            <h3 class="experience-role">Data Engineer</h3>
+            <p class="experience-company"><a href="https://www.exactsciences.com/" target="_blank"
+                rel="noopener noreferrer">Exact Sciences</a> — Munich, Germany</p>
+            <ul class="experience-bullets">
+              <li>Design, implement, and optimize scalable data pipelines on AWS for advanced proteomics data analysis
+                and governance.</li>
+              <li>Create cloud-based web dashboards on AWS to streamline experimental workflows.</li>
+              <li>Implement and fine-tune machine learning models for large-scale omics data analysis.</li>
+              <li>Develop omics data platform to drive biomarker discovery and advance cancer research.</li>
+            </ul>
+            <div class="experience-tags">
+              <span>Python</span><span>AWS</span><span>Terraform</span><span>Packer</span><span>Airflow</span><span>ML</span><span>Django</span><span>Bash</span><span>Biomarker
+                Discovery</span>
+            </div>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">06/2020 — 05/2022</span>
+          <div class="experience-content">
+            <h3 class="experience-role">Data Scientist</h3>
+            <p class="experience-company">OmicEra Diagnostics — Munich, Germany</p>
+            <ul class="experience-bullets">
+              <li>Built a comprehensive real-time quality control pipeline and monitoring dashboard for mass
+                spectrometry-based proteomics.</li>
+              <li>Developed OmicLearn, an open-access, user-friendly ML platform for omics data.</li>
+              <li>Applied machine learning and deep learning techniques to proteomics data for biomarker discovery.</li>
+              <li>Published two scientific papers, including one as the first author.</li>
+            </ul>
+            <div class="experience-tags">
+              <span>Python</span><span>Machine and Deep
+                Learning</span><span>Statistics</span><span>Docker</span><span>Flask</span><span>REST
+                APIs</span><span>SQL</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">02/2018 — 01/2020</span>
+          <div class="experience-content">
+            <h3 class="experience-role">Computational Biologist</h3>
+            <p class="experience-company">Rare Disease Lab — Kayseri, Turkey</p>
+            <ul class="experience-bullets">
+              <li>Created end-to-end bioinformatics pipelines for comparative genomics analysis.</li>
+              <li>Built ConVarT, a search engine for missense variants across humans and other organisms.</li>
+              <li>Developed MSABrowser, a JavaScript library for visualizing sequence alignments.</li>
+              <li>Published two scientific papers, including one as the first author.</li>
+            </ul>
+            <div class="experience-tags">
+              <span>Bioinformatics</span><span>Genomics</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>Bash</span><span>HTML/CSS</span><span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talks -->
+  <section id="talks" class="section">
+    <div class="container">
+      <div class="section-header-with-link">
+        <div class="section-header">
+          <p class="section-label">Speaking</p>
+          <h2 class="section-title">Talks</h2>
+          <p class="section-subtitle">Conference presentations and meetup talks</p>
+        </div>
+        <a href="https://www.youtube.com/@furkanmtorun" target="_blank" rel="noopener noreferrer" class="youtube-link">
+          <i class="fab fa-youtube"></i>
+          View Recordings on YouTube <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <div class="talks-list">
+        <div class="talk-item">
+          <span class="talk-date">21 May 2024</span>
+          <h3 class="talk-title">
+            <a href="https://www.meetup.com/pymunich/events/299650733/" target="_blank" rel="noopener noreferrer">
+              Become a Data Storyteller with Streamlit <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="talk-event">
+            <a href="https://www.meetup.com/pymunich/" target="_blank">PyMunich Meetup <i
+                class="fas fa-external-link-alt"></i></a> — Munich, Germany
+          </p>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-date">20 Nov 2023</span>
+          <h3 class="talk-title">
+            <a href="https://www.meetup.com/pydata-prague/events/297072175/" target="_blank" rel="noopener noreferrer">
+              Become a Data Storyteller with Streamlit <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="talk-event">
+            <a href="https://pydata.cz/" target="_blank">PyData Meetup <i class="fas fa-external-link-alt"></i></a> —
+            Prague, Czech Republic
+          </p>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-date">16 Sep 2023</span>
+          <h3 class="talk-title">
+            <a href="https://cz.pycon.org/2023/program/talks/73/" target="_blank" rel="noopener noreferrer">
+              How to Build an Open-Source ML Platform in Biology? <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="talk-event">
+            <a href="https://cz.pycon.org/2023/" target="_blank">PyCon CZ <i class="fas fa-external-link-alt"></i></a> —
+            Prague, Czech Republic
+          </p>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-date">26 Jul 2023</span>
+          <h3 class="talk-title">
+            <a href="https://www.eventbrite.de/e/bits-in-bio-munich-july-edition-tickets-663259526097" target="_blank"
+              rel="noopener noreferrer">
+              Organizer & Moderator: Bits in Bio | July Edition <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="talk-event">
+            <a href="https://bitsinbio.org/" target="_blank">Bits in Bio <i class="fas fa-external-link-alt"></i></a> —
+            Munich, Germany
+          </p>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-date">22 Jun 2023</span>
+          <h3 class="talk-title">
+            <a href="https://www.meetup.com/de-DE/munich-datageeks/events/293903743/" target="_blank"
+              rel="noopener noreferrer">
+              Application of machine learning on biological datasets <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="talk-event">
+            <a href="https://www.meetup.com/munich-datageeks/" target="_blank">Munich DataGeeks Meetup <i
+                class="fas fa-external-link-alt"></i></a> — Munich, Germany
+          </p>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-date">7 Jun 2023</span>
+          <h3 class="talk-title">
+            <a href="https://www.meetup.com/PyLadiesMunich/events/293371897" target="_blank" rel="noopener noreferrer">
+              Application of machine learning on biological datasets <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="talk-event">
+            <a href="https://www.meetup.com/pyladiesmunich/" target="_blank">PyLadies Meetup <i
+                class="fas fa-external-link-alt"></i></a> — Munich, Germany
+          </p>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-date">28 May 2023</span>
+          <h3 class="talk-title">
+            <a href="https://2023.pycon.it/en/event/how-to-build-an-open-source-machine-learning-platform-in-biology"
+              target="_blank" rel="noopener noreferrer">
+              How to Build an Open-Source ML Platform in Biology? <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="talk-event">
+            <a href="https://pycon.it" target="_blank">PyCon IT <i class="fas fa-external-link-alt"></i></a> — Florence,
+            Italy
+          </p>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-date">15-18 Jun 2019</span>
+          <h3 class="talk-title">
+            <a href="https://doi.org/10.1093/nar/gkab939" target="_blank" rel="noopener noreferrer">
+              ConVarT poster presentation at ESHG <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          <p class="talk-event">
+            <a href="https://www.eshg.org/" target="_blank">52nd European Human Genetics Conference (ESHG'19) <i
+                class="fas fa-external-link-alt"></i></a> — Gothenburg, Sweden
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-header-with-link">
+        <div class="section-header">
+          <p class="section-label">Research</p>
+          <h2 class="section-title">Publications</h2>
+          <p class="section-subtitle">Research contributions and scientific publications</p>
+        </div>
+        <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank" rel="noopener noreferrer"
+          class="scholar-link">
+          <i class="fas fa-graduation-cap"></i>
+          Google Scholar <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+      <div class="publications-list">
+        <a href="https://doi.org/10.1021/acs.jproteome.2c00473" target="_blank" rel="noopener noreferrer"
+          class="publication-item">
+          <div class="publication-year-badge">
+            <span class="publication-year">2022</span>
+            <span class="first-author-badge">1st Author</span>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title">Transparent exploration of machine learning for biomarker discovery from
+              proteomics and omics data</h3>
+            <p class="publication-authors"><strong>Torun, F.M.</strong>, Winter, S.V., Doll, S., Riese, F.M., Vorobyev,
+              A., Mueller-Reif,
+              J.B., Geyer, P.E., & Strauss, M.T.</p>
+            <div class="publication-meta">
+              <span class="publication-journal">Journal of Proteome Research</span>
+              <span class="publication-divider">|</span>
+              <span class="publication-note"><strong>Featured on the cover of the February 2023 issue.</strong></span>
+            </div>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://doi.org/10.1093/nar/gkab939" target="_blank" rel="noopener noreferrer"
+          class="publication-item">
+          <div class="publication-year-badge">
+            <span class="publication-year">2022</span>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title">ConVarT: a search engine for matching human genetic variants with variants
+              from non-human species</h3>
+            <p class="publication-authors">Pir, M.S., Bilgin, H.I., Sayici, A., Coskun, F., <strong>Torun,
+                F.M.</strong>, Zhao, P., Kang,
+              Y., Cevik, S., Kaplan, O.I.</p>
+            <div class="publication-meta">
+              <span class="publication-journal">Nucleic Acids Research</span>
+            </div>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://doi.org/10.15252/emmm.202114167" target="_blank" rel="noopener noreferrer"
+          class="publication-item">
+          <div class="publication-year-badge">
+            <span class="publication-year">2021</span>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title">High-resolution serum proteome trajectories in COVID-19 reveal
+              patient-specific seroconversion</h3>
+            <p class="publication-authors">Geyer, P., Arend, F., Doll, S., Louiset, M., Virreira Winter, S.,
+              Mueller-Reif, J. & <strong>Torun, F.M.</strong> et al.</p>
+            <div class="publication-meta">
+              <span class="publication-journal">EMBO Molecular Medicine</span>
+            </div>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://doi.org/10.1093/bioadv/vbab009" target="_blank" rel="noopener noreferrer"
+          class="publication-item">
+          <div class="publication-year-badge">
+            <span class="publication-year">2021</span>
+            <span class="first-author-badge">1st Author</span>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title">MSABrowser: dynamic and fast visualization of sequence alignments, variations,
+              and annotations</h3>
+            <p class="publication-authors"><strong>Torun, F.M.</strong>, Bilgin, H.I. and Kaplan, O.I.</p>
+            <div class="publication-meta">
+              <span class="publication-journal">Bioinformatics Advances</span>
+            </div>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Honors -->
+  <section id="honors" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Recognition</p>
+        <h2 class="section-title">Honors & Awards</h2>
+        <p class="section-subtitle">Academic and professional achievements</p>
+      </div>
+      <div class="honors-grid">
+        <div class="honor-item">
+          <span class="honor-year">February 2023</span>
+          <h3 class="honor-title">Paper Featured on Journal Cover </h3>
+          <p class="honor-org">My first-authored paper <a href="https://doi.org/10.1021/acs.jproteome.2c00473"
+              target="_blank" class="link">OmicLearn</a> is featured on <a href="https://pubs.acs.org/toc/jprobs/22/2"
+              target="_blank" class="link">the cover of Journal of Proteome Research</a>.</p>
+        </div>
+        <div class="honor-item">
+          <span class="honor-year">June 2022</span>
+          <h3 class="honor-title">Academic Excellence</h3>
+          <p class="honor-org">Graduated with <strong>a high honor degree (3.63/4.00)</strong> and <strong>1st ranked</strong> in Faculty
+            of Life and Natural Sciences.</p>
+        </div>
+        <div class="honor-item">
+          <span class="honor-year">May 2022</span>
+          <h3 class="honor-title">Researcher Travel Fellowship</h3>
+          <p class="honor-org">Received the Travel Fellowship by <a href="https://open-bio.org/" target="_blank">Open
+              Bioinformatics Foundation (OBF)</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="tech-stack" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Tools</p>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="tech-stack-grid">
+        <div class="tech-category">
+          <h3 class="tech-category-title">Core Skills</h3>
+          <div class="tech-tags">
+            <span>Data Science / Engineering</span>
+            <span>Amazon Web Services (AWS)</span>
+            <span>Machine Learning</span>
+            <span>Omics</span>
+            <span>Bioinformatics / Computational Biology</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3 class="tech-category-title">Programming Languages</h3>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Bash</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3 class="tech-category-title">Cloud & Infrastructure</h3>
+          <div class="tech-tags">
+            <span>AWS</span>
+            <span>Terraform</span>
+            <span>Packer</span>
+            <span>Docker</span>
+            <span>CI/CD</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3 class="tech-category-title">Bioinformatics</h3>
+          <div class="tech-tags">
+            <span>Genetics/Genomics</span>
+            <span>Biomarker Discovery</span>
+            <span>Variant Calling & Annotation</span>
+            <span>RNA-Seq</span>
+            <span>CLI/GUI Tool & Platform Development</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3 class="tech-category-title">Web Development</h3>
+          <div class="tech-tags">
+            <span>Flask</span>
+            <span>Django</span>
+            <span>HTML/CSS</span>
+            <span>jQuery</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3 class="tech-category-title">DevOps & Tools</h3>
+          <div class="tech-tags">
+            <span>REST & GraphQL APIs</span>
+            <span>SQL/NoSQL Databases</span>
+            <span>Airflow</span>
+            <span>Celery</span>
+            <span>DVC</span>
+            <span>BDD</span>
+            <span>Git</span>
+            <span>Agile/Scrum</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3 class="tech-category-title">Machine / Deep Learning</h3>
+          <div class="tech-tags">
+            <span>Scikit-learn</span>
+            <span>XGBoost/LGBM</span>
+            <span>PyTorch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteering -->
+  <section id="volunteering" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Community</p>
+        <h2 class="section-title">Volunteering</h2>
+        <p class="section-subtitle">Community involvement and leadership</p>
+      </div>
+      <div class="volunteering-grid">
+        <div class="volunteering-item">
+          <div class="volunteering-header">
+            <h3 class="volunteering-role">Organizer</h3>
+            <span class="volunteering-period">04/2023 — 07/2024</span>
+          </div>
+          <p class="volunteering-org"><a href="https://bitsinbio.org/" target="_blank" rel="noopener noreferrer">Bits in
+              Bio</a> — Munich, Germany</p>
+          <p class="volunteering-description">Brought everyone interested in biotechnology, management, bioinformatics,
+            or software in life sciences together with regular in-person events and sponsored meetups.</p>
+        </div>
+        <div class="volunteering-item">
+          <div class="volunteering-header">
+            <h3 class="volunteering-role">Co-founder</h3>
+            <span class="volunteering-period">08/2018 — 01/2020</span>
+          </div>
+          <p class="volunteering-org">Rare Diseases — Kayseri, Turkey</p>
+          <p class="volunteering-description">Established the platform and led the team for an open-access database
+            about rare diseases in Turkish and creating public awareness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="contact-description">I'm always interested in new opportunities, exciting projects, and giving talks
+            at conferences and events.</p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-block">
+            <h3 class="contact-heading">Email</h3>
+            <a href="mailto:furkanmtorun@gmail.com" class="contact-email">furkanmtorun@gmail.com</a>
+          </div>
+          <div class="contact-block">
+            <h3 class="contact-heading">Connect</h3>
+            <div class="contact-social">
+              <a href="https://linkedin.com/in/furkanmtorun" target="_blank" rel="noopener noreferrer"
+                class="contact-social-item">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ" target="_blank" rel="noopener noreferrer"
+                class="contact-social-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Google Scholar</span>
+              </a>
+              <a href="https://github.com/furkanmtorun" target="_blank" rel="noopener noreferrer"
+                class="contact-social-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.youtube.com/@furkanmtorun" target="_blank" rel="noopener noreferrer"
+                class="contact-social-item">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+              </a>
+              <a href="https://x.com/furkanmtorun" target="_blank" rel="noopener noreferrer"
+                class="contact-social-item">
+                <i class="fab fa-x-twitter"></i>
+                <span>X / Twitter</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <span>&copy; 2026 Furkan M. Torun. All rights reserved.</span>
+        <span>Munich, Bavaria, Germany</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js.js"></script>
+
+  <!-- GDPR Notification Badge -->
+  <div class="gdpr-notification" id="gdprNotification">
+    <p>We use cookies for analytics purposes. By continuing to use this website, you agree to our use of cookies.</p>
+    <button id="okButton" onclick="closeNotification()">Got it!</button>
+  </div>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "Person",
         "name": "Furkan M. Torun",
-        "jobTitle": "Researcher & Data Engineer",
+        "jobTitle": "Data Engineer",
         "affiliation": {
           "@type": "Organization",
           "name": "Exact Sciences"
@@ -531,17 +646,12 @@
         "image": "https://user-images.githubusercontent.com/49681382/165621959-1991c02b-2682-4e35-8b46-2bc52a6fd2c5.png",
         "sameAs": [
           "https://scholar.google.com/citations?user=d5ZyOZ4AAAAJ",
-          "https://twitter.com/furkanmtorun",
+          "https://x.com/furkanmtorun",
           "https://www.linkedin.com/in/furkanmtorun/",
           "https://www.youtube.com/@furkanmtorun"
         ]
       }
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-    </script>
 </body>
+
 </html>
