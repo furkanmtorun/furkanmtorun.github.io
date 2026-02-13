@@ -1,3 +1,6 @@
 # Personal Website 
 
-http://furkanmtorun.github.io
+- Furkan M. Torun
+- http://furkanmtorun.github.io
+
+---
