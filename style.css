@@ -682,80 +682,98 @@ html.light .menu-toggle.open .icon-close {
 }
 
 .talk-item {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.5rem;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem 3rem 1.5rem 1.5rem;
   border: 2px solid var(--border);
+  color: var(--fg);
+  text-decoration: none;
   transition: all 0.2s;
 }
 
 .talk-item:hover {
   border-color: rgba(56, 191, 160, 0.4);
+  background: rgba(56, 191, 160, 0.02);
+}
+
+.talk-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .talk-date {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   color: var(--muted-fg);
 }
 
 .talk-title {
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--fg);
-}
-
-.talk-title a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
+  line-height: 1.6;
   color: var(--fg);
   transition: color 0.2s;
 }
 
-.talk-title a:hover {
+.talk-item:hover .talk-title {
   color: var(--primary);
 }
 
-.talk-title svg {
-  width: 14px;
-  height: 14px;
-  opacity: 0;
-  transition: opacity 0.2s;
+.talk-item:hover .talk-date {
+  color: var(--primary);
 }
 
-.talk-item:hover .talk-title svg {
-  opacity: 1;
+.talk-item > i {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: var(--muted-fg);
+  transition: color 0.2s;
+}
+
+.talk-item:hover > i {
+  color: var(--primary);
 }
 
 .talk-event {
   font-size: 0.75rem;
+  font-weight: 600;
   color: var(--muted-fg);
 }
 
-.talk-event a {
-  color: var(--fg);
-  text-decoration: underline;
-  text-decoration-color: rgba(56, 191, 160, 0.4);
-  text-underline-offset: 4px;
-  transition: color 0.2s;
+.talk-location {
+  color: var(--primary);
+  font-weight: 700;
 }
 
-.talk-event a:hover {
+.talk-item:hover .talk-event {
+  color: var(--fg);
+}
+
+.talk-item:hover .talk-location {
   color: var(--primary);
 }
 
 @media (min-width: 768px) {
   .talk-item {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
+    align-items: flex-start;
   }
 
   .talk-date {
     width: 10rem;
     flex-shrink: 0;
+  }
+
+  .talk-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
   }
 
   .talk-title {
