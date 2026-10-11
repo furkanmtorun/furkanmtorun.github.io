@@ -285,6 +285,7 @@ html.light .menu-toggle.open .icon-close {
   text-decoration-color: rgba(56, 191, 160, 0.4);
   text-underline-offset: 4px;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .hero-description a:hover {
