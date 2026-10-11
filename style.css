@@ -276,6 +276,7 @@ html.light .menu-toggle.open .icon-close {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--muted-fg);
+  text-aligng: justify;
 }
 
 .hero-description a {
